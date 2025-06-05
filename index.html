@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>for the loml</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0 20px 60px;
+      background: black;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fce4ec;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      min-height: 100vh;
+      overflow-y: auto;
+    }
+    .clouds {
+      position: fixed;
+      top: 0; left: 0;
+      width: 200%; height: 100%;
+      background:
+        radial-gradient(circle at 20% 50%, rgba(255,255,255,0.12), transparent 50%),
+        radial-gradient(circle at 60% 40%, rgba(255,255,255,0.15), transparent 50%),
+        radial-gradient(circle at 80% 55%, rgba(255,255,255,0.1), transparent 50%);
+      animation: moveClouds 60s linear infinite;
+      filter: blur(15px);
+      z-index: -1;
+      pointer-events: none;
+    }
+    @keyframes moveClouds {
+      from {transform: translateX(0);}
+      to {transform: translateX(-50%);}
+    }
+    h1 {
+      font-size: 2rem;
+      color: #ff80ab;
+      margin: 40px 0 10px;
+    }
+    .scene-image {
+      max-width: 300px;
+      border-radius: 12px;
+      margin: 20px 0;
+      box-shadow: 0 0 12px rgba(255,255,255,0.1);
+    }
+    .letter, p {
+      font-size: 1rem;
+      max-width: 650px;
+      margin: 20px auto;
+      padding: 15px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      line-height: 1.6;
+      color: #ffd1dc;
+      white-space: pre-wrap;
+      text-align: left;
+    }
+    .scene {display: none;}
+    .scene.active {display: block;}
+    .nav {
+      position: fixed;
+      bottom: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      z-index: 2;
+    }
+    .nav button {
+      background: #ffaad4;
+      border: none;
+      padding: 8px 14px;
+      color: white;
+      border-radius: 20px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      font-size: 1rem;
+      transition: 0.2s;
+    }
+    .nav button:hover {background: #ff85be;}
+  </style>
+</head>
+<body>
+  <audio id="bg-music" src="tumsehi.mp3" autoplay loop></audio>
+  <div class="clouds"></div>
+
+  <!-- Scene 1 -->
+  <section id="scene1" class="scene active">
+    <h1>for the loml</h1>
+    <p>hiii babyyy. happy happy birthday to youuuuu. this is a tiny gift for you. i love you sooooooo much.</p>
+  </section>
+
+  <!-- Scene 2 -->
+  <section id="scene2" class="scene">
+    <h1>once upon a time</h1>
+    <div class="letter">
+      "i'll marry you someday. that sounds fun."<br>
+      it does. i didn't believe you when you said that randomly that night.<br>
+      but what's even more unbelievable is the fact that almost 4 months later<br>
+      i don't see myself marrying anyone else.<br><br>
+      time goes by fast huh? it's already been nearly 4 months since valentine's.<br>
+      those few days were some of the best days i had in a row.<br>
+      you know, i was pretty sad when that night ended<br>
+      because i thought you were just messing around<br>
+      but we're hereeee now. and i can't explain how happy that makes me.<br><br>
+      honestly, it'd be fun to tell our future kid<br>
+      about my oscar-winning acting of victoria beckham.<br>
+      yours was pretty average (im sorry, someone had to say it).<br>
+      yeah maybe sometimes i do miss those times<br>
+      but it's pretty fun now too.<br><br>
+      anyways, i love you sooooooo much,<br>
+      see ya at the next one.<br><br>
+      yours,<br>
+      swasti
+    </div>
+  </section>
+
+  <!-- Scene 3 -->
+  <section id="scene3" class="scene">
+    <h1>valentine</h1>
+    <div class="letter">
+      "i still don't have a valentine."<br>
+      was i desperate for a valentine? yes. but was i actually looking for one? no.<br>
+      absolutely not. not even once was i actually thinking i'd actually have an actual valentine for valentine's day.<br>
+      that was until 12th feb came into the play.<br><br>
+      i'll blame you my entire life for making me a mess that night.<br>
+      you aren't supposed to say all of that out of nowhere and not expect me to have a heart attack.<br>
+      like what do you mean you're hopelessly, helplessly and pathetically in love with me and i didn't know?<br>
+      like i'm that kinda person who can figure out when someone likes someone.<br>
+      so what do you mean you gave me "signs"? signs. *sighs*.<br><br>
+      took me a while to process but for days did i wait for you to tell me it was all a prank until it wasn't.<br>
+      i mean, even now, sometimes i don't believe it.<br>
+      but but but that was a really coooooooool first valentine's day. 10/10. would do it again.<br><br>
+      anywayssssss, we've got like a million more of those to come so yeah.<br>
+      that's it for this one. see ya at the next. mwah.<br><br>
+      your forever valentine,<br>
+      swasti
+    </div>
+  </section>
+
+  <!-- Scene 4 -->
+  <section id="scene4" class="scene">
+    <h1>hopelessly, helplessly, pathetically</h1>
+    <div class="letter">
+     welllllll i was never the kind of person people saw being with someone. but i was always ALWAYS looking for my soulmate. im basically like ted mosby but introverted but no one's ready for that conversation yet so whatever. anyways, where was i? yeah so i always thought i'd know in an instant that this person is like THE one for me. but now that we're here, i'm so glad that isn't true. because that'd be sooooooo boring. you don't even get to know the person properly. i love how i go to grow with you for an year before we happened. it was pretty fun (not the jokes or the pickup lines) (im sorry again, someone had to say it). aaaaaaaaaand now that i've found my soulmate (that's you, by the way) and am hopelessly, helplessly and pathetically in love with him, you should be ready to do ALL of the cliche stuff they do in movies and so much more. 
+
+    theres this one song which goes like "musafir mai bhatka, tu mera basera." it's very uhm cliche but now it makes a lot of sense. i didn't know where i was until you came along the way and i realized it was you who i was going to. 
+
+    aaaaaaand what else. not much i guess. yeah, i love you. mwah. see ya.
+
+    love,
+    swasti
+    </div>
+  </section>
+
+  <!-- Scene 5 -->
+  <section id="scene5" class="scene">
+    <h1>love is friendship</h1>
+    <div class="letter">
+      so one of my favorite movies growing up had this really really really iconic scene wherein the male lead is asked "what is love?" by his professor and he says "pyaar dosti hai." which means love is friendship. he explains that if she can't be his best friend, then he can't be in love with her cause without friendship, there's no love. aaaaaaaaaaand i guess that's really true for us. for me atleast. cause before anything you're my best friend. you make the quiet moments feel warm. you're always there to laugh at my really funny jokes and make the worst ones yourself (yeah i said it). so yeah, maybe love is dosti. and if that's the case, then i’m in love in the best way possible. anyways, you're coming close to the end. see ya at the next.
+
+    your bestie,
+    swasti
+    </div>
+  </section>
+
+  <!-- Scene 6 -->
+  <section id="scene6" class="scene">
+    <h1>tum se hi</h1>
+    <div class="letter">
+      hiiii again. are you tired of these yet? well anyways. if it wasn't obvious yet, tum se hi is my favorite song (so NOT obvious). it's one song i've known since forever and never got enough of. aaaaand i didn't think i'd resonate to it so soon but i'm not complaining. well, all thanks to you now i can always picture a person in my head whenever it plays. i don't think i'll ever grow tired of this song. like it just does something to my insides. not to mention, i'm like spiritually connected to this movie, like it's the other loml. aaaaaand you're like the geet to my aditya. hehehe.
+
+    there's this one line that goes like "tum se hi din hota hai surmai shaam aati hai tum se hi, tum se hi" and its so true cause i'm not even like fully awake when i send you that good morning text. and with you only my evening starts. another one goes like "main tera sarmaya hoon joh bhi main ban paya hoon tum se hi, tum se hi raaste mil jaate hai manzilein mil jaati hai tum se hi, tum se hi." sarmaya here means property, and this part basically means i'm your property and you can do whatever you want me because all i am is because of you. and how with you, i find all the paths and the destination. i don't know about the paths but i know that i've reached my destination cause i found youuuuuu. okay thoda zyada cringe hogaya. anyways, go on the last one. bye bye.
+
+    love,
+    swasti.
+    </div>
+  </section>
+
+  <!-- Scene 7 -->
+  <section id="scene7" class="scene">
+    <h1>happily ever after</h1>
+    <div class="letter">
+      
+    happy happy birthday to the love of my life. yayyyyy you're 17. i mean that's pretty old to be honest. but anywayssss, you're like my happy pill. and i need a dose of you everyday, every hour, all the time. you make me the happiest person on earth and that'll never change. finally, quoting something from one of my favorite movies, "you're pretty much the only thing that makes me want to wake up in the morning." like duh? why would anyone get up for allen? anyways, there are a lot more birthdays to come. hopefully. aaaaaaaaaaand yeah that's pretty much it. happy birthday once again. i love you. mwah.
+    
+
+    yours,
+    swasti
+    </div>
+  </section>
+
+  <div class="nav">
+    <button onclick="showScene(1)">1</button>
+    <button onclick="showScene(2)">2</button>
+    <button onclick="showScene(3)">3</button>
+    <button onclick="showScene(4)">4</button>
+    <button onclick="showScene(5)">5</button>
+    <button onclick="showScene(6)">6</button>
+    <button onclick="showScene(7)">7</button>
+  </div>
+
+  <script>
+    function showScene(n) {
+      document.querySelectorAll('.scene').forEach(s => s.classList.remove('active'));
+      document.getElementById('scene' + n).classList.add('active');
+      window.scrollTo(0,0);
+    }
+  </script>
+</body>
+</html>
